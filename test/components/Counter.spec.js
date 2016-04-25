@@ -23,7 +23,7 @@ function setup(value = 0) {
 describe('Counter component', () => {
   it('should display count', () => {
     const { p } = setup()
-    expect(p.text()).toMatch(/^Clicked with error: 0 times/)
+    expect(p.text()).toMatch(/^Clicked: 0 times/)
   })
 
   it('first button should call onIncrement', () => {
