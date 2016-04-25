@@ -13,6 +13,12 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(webpackHotMiddleware(compiler))
 }
 
+var express = require("express")
+
+app = express();
+
+app.use(express.static(__dirname + "/dist"))
+
 app.get("/", function (req, res) {
   res.sendFile(__dirname + '/index.html')
 })
@@ -21,6 +27,6 @@ app.listen(port, function (error) {
   if (error) {
     console.error(error)
   } else {
-    console.info("==> 🌎  Listening on port %s. Open up http://localhost:%s/ in your browser.", port, port)
+    console.info("==> Listening on port %s. Open up http://localhost:%s/ in your browser.", port, port)
   }
 })
