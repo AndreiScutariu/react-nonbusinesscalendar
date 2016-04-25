@@ -3,3 +3,8 @@ node_js:
   - "5"
 notifications:
   slack: boyswillbeboys-team:MMtbrZBioaKX33PM15X0Q4dL
+deploy:
+  app: react-nonbusinesscalendar
+  provider: heroku
+  api_key: 
+    secure: b2e694a5-25ae-4bba-8fa7-33bf7a1104c6
