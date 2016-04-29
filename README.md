@@ -1,2 +1,4 @@
 "# react-nonbusinesscalendar" 
-Test
+
+ESLint configuration:
+npm install -g eslint
